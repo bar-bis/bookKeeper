@@ -12,26 +12,28 @@
     <!-- Open modal -->
     <h1 id="show-modal">Add Bookmark<i class="fas fa-bookmark"></i></h1>
     <!-- Bookmarks -->
-    <div class="container" id="bookmark-container">
-        <div class="item">
-            <div class="name">
-                <i class="far fa-times-circle" id="delete-bookmark" title="delete bookmark"></i>
-                <img src="http://www.google.com/s2/favicons?domain=google.com" alt="Favicon">
-                <a href="google.com" target="_blank">Google</a>
+    <div class="container" id="bookmarks-container"></div>
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <i class="fas fa-times-circle close-icon" id="close-modal"></i>
+            <div class="modal-header">
+                <h3>Add Bookmark</h3> 
             </div>
-        </div>
-        <div class="item">
-            <div class="name">
-                <i class="far fa-times-circle" id="delete-bookmark" title="delete bookmark"></i>
-                <img src="http://www.google.com/s2/favicons?domain=google.com" alt="Favicon">
-                <a href="google.com" target="_blank">Google</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="name">
-                <i class="far fa-times-circle" id="delete-bookmark" title="delete bookmark"></i>
-                <img src="http://www.google.com/s2/favicons?domain=google.com" alt="Favicon">
-                <a href="google.com" target="_blank">Google</a>
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <!-- website name -->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label" >Website name</label>
+                        <input type="text" class="form-input" id="website-name">
+                    </div>
+                     <!-- website address -->
+                     <div class="form-group">
+                        <label for="website-url" class="form-label" >Website URL</label>
+                        <input type="text" class="form-input" id="website-url">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
             </div>
         </div>
     </div>
